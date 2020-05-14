@@ -2,12 +2,19 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class PressedScript : MonoBehaviour
 {
-   public void PushedButton()
+    public Text thisText;
+
+   public void PushedButton1()
     {
-        UnityEngine.Debug.Log("Pushed Button");
+        thisText.text = "PressedA";
+    }
+    public void PushedButton2()
+    {
+        thisText.text = "PressedB";
     }
 }
